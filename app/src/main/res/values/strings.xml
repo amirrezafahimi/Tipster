@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tipster</string>
+    <string name="textLbl1">Total Amount:</string>
+    <string name="textLbl2">No. of people:</string>
+    <string name="textLbl3">Tip percentage:</string>
+    <string name="textLbl4">Tip Amount:</string>
+    <string name="textLbl5">Total to Pay:</string>
+    <string name="textLbl6">Total per Person</string>
+    <string name="rdoTxt15">15%</string>
+    <string name="rdoTxt20">20%</string>
+    <string name="rdoTxtOther">Other</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnCalculate">Calculate</string>
+</resources>
