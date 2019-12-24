@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     /*
                      * Enable the Calculate button if Total Amount and No. of
                      * People fields have valid values. Also ensure that user
-                     * has entered an Other Tip Percentage value before enablind
+                     * has entered an Other Tip Percentage value before enabling
                      * the Calculate button.
                      */
                     btnCalculate.setEnabled(txtAmount.getText().length() > 0 &&
@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
         else if (radioCheckedId == R.id.radioTwenty)
             percentage = 20.00;
         else if (radioCheckedId == R.id.radioOther) {
-            txtTipOther.getText().toString();
+            percentage = Double.parseDouble(txtTipOther.getText().toString());
             if (percentage < 1.0) {
                 showErrorAlert("Enter a valid Tip Percentage",
                         txtTipOther.getId());
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void showErrorAlert(String errorMessage,
                                 final int fieldId) {
-        new AlertDialog.Builder(this).setTitle("Error")
+        new AlertDialog.Builder(this).setTitle("(´･ω･`)?")
                 .setMessage(errorMessage).setNeutralButton("Close",
                 new DialogInterface.OnClickListener() {
                     @Override
